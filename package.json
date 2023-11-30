@@ -7,7 +7,8 @@
     "dev": "pnpm nodemon",
     "build": "rimraf ./build && pnpm tsc",
     "start": "pnpm run build && node build/index",
-    "lint": "eslint . --cache --fix --ext js,jsx,ts,tsx"
+    "lint": "eslint . --cache --fix --ext js,jsx,ts,tsx",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.3",
     "nodemon": "^3.0.1",
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5",

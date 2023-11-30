@@ -24,4 +24,5 @@ build
 *.sln
 *.sw?
 
+.husky
 .eslintcache
