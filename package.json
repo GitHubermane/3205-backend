@@ -7,7 +7,7 @@
     "dev": "pnpm nodemon",
     "build": "rimraf ./build && pnpm tsc",
     "start": "pnpm run build && node build/index",
-    "lint": "eslint . --cache --fix --ext js,jsx,ts,tsx",
+    "lint": "eslint . --cache --fix --ext js,ts",
     "prepare": "husky install"
   },
   "keywords": [],
