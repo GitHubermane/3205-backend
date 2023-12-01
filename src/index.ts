@@ -2,6 +2,7 @@ import express from "express";
 import { morganMiddleware } from "./middleware/morgan.js";
 import router from "./routes.js";
 import { logger } from "./utils/logger.js";
+import "dotenv/config";
 
 const app = express();
 const PORT = process.env.PORT ?? 5100;
@@ -14,8 +15,8 @@ const start = async () => {
     app.listen(PORT, () => {
       logger.info(`Server has been started on port ${PORT}`);
     });
-  } catch (e) {
-    logger.error(e);
+  } catch (error) {
+    logger.error(error);
   }
 };
 
