@@ -7,10 +7,11 @@ export const UserController = {
     try {
       const { email, number } = req.query;
       const user = await UserService.getUser(email as string, number as string);
-
+      logger.info("Response was sent");
       return res.json(user);
     } catch (error) {
       logger.error(error);
+      res.status(500).json({ message: error });
     }
   },
 };
