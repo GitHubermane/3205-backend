@@ -1,8 +1,8 @@
+import cors from "cors";
 import express from "express";
 import { morganMiddleware } from "./middleware/morgan.js";
 import router from "./routes.js";
 import { logger } from "./utils/logger.js";
-import cors from "cors";
 import "dotenv/config";
 
 const app = express();
